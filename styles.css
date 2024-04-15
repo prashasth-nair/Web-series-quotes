@@ -1,0 +1,75 @@
+/*  */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("https://images.unsplash.com/photo-1483356256511-b48749959172?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+.container {
+  width: fit-content;
+  height: fit-content;
+  max-width: 70%;
+  max-height: 70%;
+
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Glass backgeound effect */
+  box-shadow: 0 4px 20px hsla(180, 20%, 2%, 0.433);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+
+  text-align: center;
+}
+.quote {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin: 20px 0;
+}
+.quote h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.quote p {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin: 20px 0;
+}
+
+#new-quote {
+  background: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  margin: 20px 0;
+  transition: background 0.3s;
+}
+#new-quote:active {
+  animation: rotate 2s linear infinite;
+}
+
+/* Animation rotate 360 */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
